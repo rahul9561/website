@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Container</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <style>
+        /* Adjustments for the navbar */
+       
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="fixied">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{%static 'assest/synnergyze-removebg.png' %}" alt="Left Logo">
+            </a>
+            <!-- <a class="navbar-brand navbar-brand-centered" href="#">
+                <img src="assest/synnergyze-removebg.png" alt="" class="img-fluid">
+            </a> -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" target="_blank">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cart.html" target="_blank">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+        <!-- <nav class="navbar container navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="assest/synnergyze-removebg.png" alt="Left Logo">
+            </a>
+            <a class="navbar-brand navbar-brand-centered" href="#">
+                <img src="assest/synnergyze-removebg.png" alt="Left Logo">
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" target="_blank">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cart.html" target="_blank">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container ">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                New In
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="navbarDropdown1">
+
+                                <div class="d-flex align-items-center justify-content-around">
+                                    <div>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Repeat the structure for other lists -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Brands
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <!-- Repeat the structure for other lists -->
+                        <!-- ... List 3 to List 11 ... -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown11" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Men
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown11">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Women
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Kids
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Beauty & Groomimg
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Home
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Gourmet
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Watches & Jewellery
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Eyewear
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Featured Stores
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    </nav>
+    <hr>
+
+
+
+
+
+
+    <div class="container mt-5 main-section">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                    <!-- Profile Section -->
+                    <img src="{% static  'assest/user-profile-icon-free-vector-removebg-preview.png' %}" alt="" class="img-fluid"
+                        style="width: 90px;">
+                    <!-- Add your profile details here -->
+                    <div class="pt-3">
+                        <h3> John Doe</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="robot-font-style"> johndoe@example.com</p>
+                            <p class="pl-5 robot-font-style"> 9876567890</p>
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+                <!-- Profile Section End -->
+            </div>
+            <div class="col-md-6 text-center m-auto">
+                <!-- Edit Profile and Sign Out Buttons -->
+                <!-- class="tablinks1 d-flex align-items-center"  -->
+                <button class=" btn btn-outline-dark roboto-font mr-3 px-5 py-2 my-3 m-auto"
+                    onclick="openCity(event, 'edit-profile')">Edit Profile</button>
+                <button class="btn-outline-dark roboto-font btn px-5 py-2"> Sign Out</button>
+                <!-- Edit Profile and Sign Out Buttons End -->
+            </div>
+            <hr>
+        </div>
+        <div class="row ">
+            <p>Order Alert</p>
+            <div class="col-md-4 bg-light">
+
+                <div class="tab1">
+                    <button class="tablinks1 d-flex " onclick="openCity(event, 'London')" id="defaultOpen"><i
+                            class="bi fa-2x bi-bag-plus px-2"></i>
+                        <div>
+                            <h5> My Order</h5>
+                            <p class="" style="font-size: 13px;">Check your order status</p>
+                        </div>
+                    </button>
+                    <button class="tablinks1 d-flex" onclick="openCity(event, 'Paris')"><i
+                            class="bi bi-credit-card fa-2x px-3"></i>
+                        <div>
+                            <h5 class="text-left">Saved Cards</h5>
+                            <p class="" style="font-size: 13px;">
+                                Add credit or debit card</p>
+                        </div>
+                    </button>
+                    <button class="tablinks1 d-flex" onclick="openCity(event, 'Tokyo')">
+                        <i class="bi bi-wallet2 fa-2x px-3"></i>
+                        <div>
+                            <h5 class="text-left"> Saved UPI IDs</h5>
+                            <p class="" style="font-size: 13px;">Add UPI IDs</p>
+                        </div>
+                    </button>
+                    <button class="tablinks1 d-flex" onclick="openCity(event, 'Address')">
+                        <i class="bi bi-geo-alt-fill px-3 fa-2x"></i>
+                        <div>
+                            <h5 class="text-left">Saved Address</h5>
+                            <p class="" style="font-size: 13px;">Add a delivery address</p>
+                        </div>
+                    </button>
+                    <p class="py-3 robot-font">Gift Cards and CLiQ Cash</p>
+
+                    <button class="tablinks1 d-flex" onclick="openCity(event, 'neopass')">
+                        <img src="{% static  'assest/wxchange-removebg-preview.png' %}" alt="" class="rounded-2" style="width: 60px; background-color: rgb(233, 237, 237);">
+                        <div>
+                            <h5 class="text-left">NeuPass</h5>
+                            <p class="" style="font-size: 13px;">Check your order status</p>
+                        </div>
+                    </button>
+                    <button class="tablinks1 d-flex" onclick="openCity(event, 'giftcard')">
+                        <i class="bi bi-gift  px-3 fa-2x"></i>
+                        <div>
+                            <h5 >Buy Gift Cards</h5>
+                            <p class="" style="font-size: 13px;">Check your order status</p>
+                        </div>
+                    </button>
+                    <button class="tablinks1 d-flex align-items-center" onclick="openCity(event, 'cash')">
+                        <img src="{% static  'assest/acnt_cliqh_icon.svg' %} "
+                            style="width: 50px; background-color: rgb(218, 223, 223);" class="  rounded-1" alt="">
+                        <div>
+                            <h5 >CLiQ Cash</h5>
+                            <p class="pl-4" style="font-size: 13px;">Check your order status</p>
+                        </div>
+                    </button>
+                    <p class="py-3 robot-font">Help & Center</p>
+                    <button class="tablinks1 d-flex align-items-center" onclick="openCity(event, 'help-center')">
+                        <i class="bi bi-question-circle fa-2x px-3"></i>
+                        <div>
+                            <h5>Help Center</h5>
+                            <p class="" style="font-size: 13px;">Check your order status</p>
+                        </div>
+                    </button>
+                    <button class="tablinks1 d-flex align-items-center" onclick="openCity(event, 'Term-condition')">
+                        <i class="bi bi-card-text px-3 fa-2x"></i>
+                        <div>
+                            <h5>Term & Condition</h5>
+                            <p class="" style="font-size: 13px;">Check your order status</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-7 position-relative">
+
+                <div id="London" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>Order History</h6>
+                    <p class="robot-font-style text-decoration-underline position-absolute right-0">past 6 month</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedita nesciunt aperiam!</p>
+
+                </div>
+                <div id="Paris" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>Saved Cards</h6>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae molestias laborum labore!.</p>
+                </div>
+
+                <div id="Tokyo" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>Saved UPIs</h6>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit amet in molestias!</p>
+                </div>
+                <div id="Address" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>My Addresses</h6>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit amet in molestias!</p>
+                </div>
+                <div id="neopass" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>neopass</h6>
+                    <p class="robot-font-style text-decoration-underline position-absolute right-0">past 6 month</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedita nesciunt aperiam!</p>
+
+                </div>
+                <div id="giftcard" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>gift coin</h6>
+                    <p class="robot-font-style text-decoration-underline position-absolute right-0">past 6 month</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedita nesciunt aperiam!</p>
+
+                </div>
+                <div id="cash" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>Cash</h6>
+                    <p class="robot-font-style text-decoration-underline position-absolute right-0">past 6 month</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedita nesciunt aperiam!</p>
+
+                </div>
+                <div id="help-center" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>Help Center</h6>
+                    <p class="robot-font-style text-decoration-underline position-absolute right-0">past 6 month</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedita nesciunt aperiam!</p>
+
+                </div>
+                <div id="Term-condition" class="tabcontent1 border rounded-4 px-3 py-2">
+                    <h6>Term And Condition</h6>
+                    <hr>
+                    <h4>GENERAL TERMS OF USE OF WEBSITE</h4>
+                    <p>These Website (“Terms“) are published in accordance with the provisions of Rule 3(1) of the
+                        Information Technology (Intermediaries Guidelines) Rules, 2011. These Terms are an ‘electronic
+                        record’ as contemplated under section 2(t) of the Information Technology Act, 2000 and the Rules
+                        thereunder. These Terms being an electronic record are generated by a computer system and do not
+                        require any physical or digital signatures. </p>
+                    <h4>I. INTRODUCTION</h4>
+                    <p> The website www.tatacliq.com ("Website") is operated by Tata UniStore Limited, a company
+                        incorporated under the Companies Act, 1956 ("TATA CLiQ") having its registered office at Bombay
+                        House, 24 Homi Modi Street, Mumbai - 400001. Use of the Website and its services is governed by
+                        these Terms of Use (“Terms”).
+
+                        By using the Website, users signify they have carefully read, understood and agree to be bound
+                        by these Terms. When users transact or browse through the Website or avail any service provided
+                        by the Website, in present or future, users accept and agree to be bound by these Terms,
+                        policies, guidelines and conditions of TATA CLiQ’s service.</p>
+                </div>
+                <div id="edit-profile" class="tabcontent1 border rounded-4 px-5 py-3">
+                    <h4>Profile Overview</h4>
+                    <hr>
+                    <h5>Basic Details</h5>
+                    <div class="row border rounded-3 px-4 py-3">
+                        <div class="col-md-6 edit-profile">
+                            <p class="robot-font-style">First Name</p>
+                            <input type="text" placeholder="first name">
+                        </div>
+                        <div class="col-md-6 edit-profile">
+                            <p  class="robot-font-style">Last Name</p>
+                            <input type="text" placeholder="last name">
+                        </div>
+                        <div class="col-md-6 mt-3 edit-profile">
+                            <p class="robot-font-style">Date of Birth</p>
+                            <input type="text" placeholder="data of Birth">
+                        </div>
+
+                    </div>
+
+                    <h5 class="pt-3">Contact Details</h5>
+                    <div class="row border rounded-3 px-4 py-3">
+                        <div class="col-md-6 edit-profile position-relative">
+                            <p class="robot-font-style">Mobile Number</p>
+                            <input type="tel" placeholder="enter your Mobile number">
+                            <p class="edit-fun dark-yellow">EDIT</p>
+                        </div>
+                        <div class="col-md-6 edit-profile position-relative">
+                            <p  class="robot-font-style">Email Id</p>
+                            <input type="email" placeholder="Enter Your email">
+                            <p class="edit-fun dark-yellow">EDIT</p>
+                        </div>
+                       
+
+                    </div>
+                    <h5 class="pt-3">Personal Details</h5>
+                    <div class="border rounded-3 px-4 py-3">
+                        <p  class="robot-font-style">Gender</p>
+                        <button class="btn border rounded-1">I'd rather not say</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+    <!-- footer    above  section -->
+  
+    <main class="footer-above-section mt-5">
+        <div class="container pt-4 pb-1">
+            <div class="row">
+                <!-- Left Side - Select, Search Bar, Button -->
+                <div class="col-md-5">
+                    <h3 class="text-white">CONNECT WITH US</h3>
+                    <p class="text-secondary">Be the first to know about new products, exclusive collections, latest
+                        trends, stories and more.</p>
+                    <div class="input-group ">
+                        <select class="custom-control bg-dark text-white border-secondary rounded-left">
+                            <option selected class="p-4">Men</option>
+                            <option value="1" class="p-4">Women</option>
+
+                        </select>
+                        <input type="text" class="form-control  bg-dark text-secondary outline border-secondary"
+                            placeholder="Enter your email id">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary rounded-right roboto-font text-white"
+                                type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-1 ">
+                    <div class="vertical-line"></div>
+                </div>
+
+
+                <div class="col-md-6 ">
+                    <div
+                        class="d-flex text-secondary right-secton roboto-font align-items-center justify-content-center mt-4">
+                        <div class="col-md-4 d-flex align-items-center flex-column justify-content-center ">
+                            <img src="assest/foot_autentic_icon.svg" alt="">
+                            <p class="text-center py-3">Authentic and Genuine Brands</p>
+                        </div>
+                        <div class=" col-md-4 d-flex align-items-center flex-column justify-content-center ">
+                            <img src="assest/foot_promise_icon.svg" alt="" class="pb-3">
+                            <p class="text-center pb-5">Tata Promise</p>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center flex-column justify-content-center">
+                            <img src="assest/foot_return_icon.svg" alt="">
+                            <p class="text-center py-3">Easy Returns And Exchanges</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer      section -->
+
+    <footer class="footer-section">
+        <div class="container pt-5">
+            <div class="row roboto-font">
+                <div class="col-md-2 col-sm-4">
+                    <h6>SHOP LUXURY</h6>
+                    <ul class="list-section">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Handbags</li>
+                        <li>Watches</li>
+                        <li>Home</li>
+                        <li>Shoes</li>
+                        <li>Fragrances</li>
+                        <li>Kids</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h6>SHOP INDILUXE</h6>
+                    <ul class="list-section">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Handbags</li>
+                        <li>Beauty</li>
+                        <li>Watches</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h6>POPULAR SEARCHES</h6>
+                    <ul class="list-section">
+                        <li>Lacoste</li>
+                        <li>Michael Kors</li>
+                        <li>Coach</li>
+                        <li>Diesel</li>
+                        <li>Watches</li>
+                        <li>Armani Exchange</li>
+                        <li>Polo Tshirts</li>
+                        <li>Wallets</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h6>USEFUL LINKS</h6>
+                    <ul class="list-section">
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                        <li>Shipping</li>
+                        <li>Cancellation</li>
+                        <li>Returns FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Gift Card T&C</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h6>DOWNLOAD</h6>
+                    <ul class="list-section">
+                        <li><img src="assest/Screenshot 2023-11-20 205940.png" alt="" class="store-icons"></li>
+                        <li><img src="assest/Screenshot 2023-11-20 210033.png" alt="" class="store-icons"></li>
+
+                    </ul>
+                </div>
+                <div class="footer-icons col-md-2 col-sm-4">
+                    <h6>FOLLOW US</h6>
+                    <ul class="d-flex align-items-center follow-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Your custom script for button actions -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent1");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks1");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+<!-- Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
